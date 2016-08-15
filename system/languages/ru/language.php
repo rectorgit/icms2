@@ -117,6 +117,7 @@
     define('LANG_PARSER_IMAGES',             'Набор изображений');
     define('LANG_PARSER_IMAGE_ALLOW_IMPORT_LINK', 'Разрешить добавление по ссылке');
     define('LANG_PARSER_FIRST_IMAGE_EMPHASIZE', 'Выделять первое изображение в записи');
+    define('LANG_PARSER_SECOND_IMAGE_PRESET', 'Пресет для изображений, кроме первого');
     define('LANG_PARSER_IMAGE_SIZE_UPLOAD',  'Создавать превью-изображения');
     define('LANG_PARSER_IMAGE_SIZE_TEASER',  'Размер в списке');
     define('LANG_PARSER_IMAGE_SIZE_FULL',    'Размер в записи');
