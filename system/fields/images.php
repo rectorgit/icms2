@@ -33,7 +33,12 @@ class fieldImages extends cmsFormField {
             )),
             new fieldCheckbox('first_image_emphasize', array(
                 'title' => LANG_PARSER_FIRST_IMAGE_EMPHASIZE
-            ))
+            )),
+	    new fieldList('size_second', array(
+		'title' => LANG_PARSER_SECOND_IMAGE_PRESET,
+		'default' => 'small',
+		'items' => $presets
+	    ))
         );
 
     }
@@ -55,7 +60,8 @@ class fieldImages extends cmsFormField {
                 $small_preset = $this->getOption('size_full');
                 $a_class = 'first_type_images';
             } else {
-                $small_preset = 'small';
+                $small_preset = $this->getOption('size_second');
+		$a_class = 'second_type_images';
              }
 
             if(!empty($paths['original']) &&  strtolower(pathinfo($paths['original'], PATHINFO_EXTENSION)) === 'gif'){
